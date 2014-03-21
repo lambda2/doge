@@ -1,5 +1,5 @@
 //  wow
-(function($) {
+$(document).ready(function() {
         //  very jquery
         var doge = $('body').css('font-family', 'Comic Sans MS, Comic Sans, Chalkboard, cursive');
         
@@ -37,4 +37,5 @@
                     + r(dogefix) +
                 '</span>');        
         }, 700);
-})(jQuery);
+        console.log("Such load !");
+});
