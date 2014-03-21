@@ -1,12 +1,10 @@
 //  wow
 (function($) {
-    //  such plugin
-    $.doge = function(tings) {
         //  very jquery
         var doge = $('body').css('font-family', 'Comic Sans MS, Comic Sans, Chalkboard, cursive');
         
         //  much array
-        tings = $.extend(['doge', 'shibe', 'excite', 'impress', 'skill', 'warn'], tings);
+        tings = $.extend(['doge', 'shibe', 'excite', 'impress', 'skill', 'warn'], []);
         
         var r = function(arr) {
             if(!arr) arr = tings; return arr[Math.floor(Math.random() * arr.length)];
@@ -39,6 +37,4 @@
                     + r(dogefix) +
                 '</span>');        
         }, 700);
-    };
-    $($.doge);
 })(jQuery);
